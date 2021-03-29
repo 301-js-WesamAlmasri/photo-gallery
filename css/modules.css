@@ -1,0 +1,20 @@
+.photo-template {
+    width: calc(100% / 3);
+    min-width: 300px;
+    height: 400px;
+    padding: 10px;
+    text-align: center;
+    line-height: 100%;
+    border: 1px solid red;
+}
+
+.photo-template h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.photo-template img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}

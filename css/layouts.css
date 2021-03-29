@@ -1,0 +1,42 @@
+body {
+    width: 100%;
+}
+
+header, footer {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    clear: both;
+}
+
+section#filter-section {
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+    margin: auto;
+    padding: 20px 0;
+}
+
+main {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    background-color: yellow;
+}
+
+article {
+    float: left;
+}
+
+@media screen and (max-width: 600px){
+    main {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px){
+    main {
+        width: 600px;
+    }
+}
