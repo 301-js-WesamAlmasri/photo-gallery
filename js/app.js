@@ -1,7 +1,7 @@
 'use strict';
 
 let allHorns = [];
-let keywords = ['default'];
+let keywords = [];
 
 const Horn = function (image_url, title, description, keyword, horns) {
   this.image_url = image_url;
@@ -29,15 +29,21 @@ function getRenderData(url) {
       new Horn(item.image_url, item.title, item.description, item.keyword, item.horns);
       appendToKeywordList(item.keyword);
     });
-    renderAllData('default');
+    renderAllData('default', 'title');
+    renderKeywordList();
   });
 }
 
-function renderAllData(keyword) {
-  allHorns.forEach(item => {
+function renderAllData(keyword, sortBy) {
+  allHorns.sort((a,b) => sortFunc(a, b, sortBy)).forEach(item => {
     if(item.keyword === keyword || keyword === 'default') item.render();
   });
-  renderKeywordList();
+}
+
+function sortFunc(a, b, sortBy) {
+  if(a[sortBy] < b[sortBy]) return -1;
+  if(a[sortBy] > b[sortBy]) return 1;
+  return 0;
 }
 
 function appendToKeywordList(keyword) {
@@ -52,15 +58,15 @@ function renderKeywordList() {
   });
 }
 
-function handleChange(event) {
-  let selectedKeyword = event.target.value;
+function handleChange() {
   $('main').empty();
-  renderAllData(selectedKeyword);
+  renderAllData($('#keyword-filter').val(), $('#sortby').val());
 }
 
 function init() {
   getRenderData('./data/page-1.json');
   $('#keyword-filter').on('change', handleChange);
+  $('#sortby').on('change', handleChange);
 }
 
 init();

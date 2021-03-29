@@ -22,21 +22,20 @@ main {
     width: 100%;
     max-width: 960px;
     margin: auto;
-    background-color: yellow;
 }
 
 article {
     float: left;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 630px){
     main {
-        width: 300px;
+        width: 320px;
     }
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px){
+@media screen and (max-width: 920px) and (min-width: 630px){
     main {
-        width: 600px;
+        width: 620px;
     }
 }
