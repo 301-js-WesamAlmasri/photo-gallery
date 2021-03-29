@@ -2,15 +2,15 @@
 
 ## Feature #1: Display images
 
-Number and name of feature: ________________________________
+Number and name of feature: Feature #1: Display images
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 10 min
 
-Start time: _____
+Start time: 01:45
 
-Finish time: _____
+Finish time: 02:00
 
-Actual time needed to complete: _____
+Actual time needed to complete: 15 min
 
 ## Feature #2: Filter images
 
