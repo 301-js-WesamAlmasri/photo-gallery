@@ -14,15 +14,15 @@ Actual time needed to complete: 15 min
 
 ## Feature #2: Filter images
 
-Number and name of feature: ________________________________
+Number and name of feature: Feature #2: Filter images
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 10 min
 
-Start time: _____
+Start time: 02:05
 
-Finish time: _____
+Finish time: 02:30
 
-Actual time needed to complete: _____
+Actual time needed to complete: 25 min
 
 ## Feature #3: Style the application
 
