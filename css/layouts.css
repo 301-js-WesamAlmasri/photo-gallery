@@ -18,6 +18,10 @@ section#filter-section {
     padding: 20px 0;
 }
 
+section .pagination {
+    margin-top: 20px;
+}
+
 main {
     width: 100%;
     max-width: 960px;

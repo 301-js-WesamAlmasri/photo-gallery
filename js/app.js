@@ -59,10 +59,21 @@ function handleChange() {
   renderAllData($('#keyword-filter').val(), $('#sortby').val());
 }
 
+function handlePagination(event) {
+  event.preventDefault();
+  allHorns = [];
+  keywords = [];
+  $('#keyword-filter option').not(':first').remove();
+  $('main').empty();
+  getRenderData(`./data/${event.target.id}.json`);
+  handleChange();
+}
+
 function init() {
   getRenderData('./data/page-1.json');
   $('#keyword-filter').on('change', handleChange);
   $('#sortby').on('change', handleChange);
+  $('button').on('click', handlePagination);
 }
 
 init();

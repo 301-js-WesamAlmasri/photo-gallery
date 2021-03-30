@@ -1,6 +1,7 @@
 section#filter-section span{
     margin: 0 10px;
 }
+
 .photo-template {
     width: calc(100% / 3 - 10px);
     min-width: 300px;

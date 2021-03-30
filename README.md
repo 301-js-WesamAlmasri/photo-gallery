@@ -47,3 +47,15 @@ Start time: 01:30
 Finish time: 1:34
 
 Actual time needed to complete: 4 min
+
+## Feature #5: Pagination
+
+Number and name of feature: Feature #5: Pagination
+
+Estimate of time needed to complete: 5 min
+
+Start time: 01:35
+
+Finish time: 01:40
+
+Actual time needed to complete: 5 min
