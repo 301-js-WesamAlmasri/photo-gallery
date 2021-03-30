@@ -1,45 +1,57 @@
 body {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header, footer {
     width: 100%;
     height: 70px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     line-height: 70px;
-    clear: both;
 }
 
 section#filter-section {
     width: 100%;
     max-width: 960px;
-    text-align: center;
     margin: auto;
+    display: flex;
+    justify-content: center;
     padding: 20px 0;
 }
 
-section .pagination {
-    margin-top: 20px;
+.pagination {
+    width: 100%;
+    max-width: 960px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
 }
 
 main {
     width: 100%;
     max-width: 960px;
     margin: auto;
-}
-
-article {
-    float: left;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 630px){
     main {
-        width: 320px;
+        max-width: 320px;
+    }
+
+    section#filter-section {
+        display: block;
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 920px) and (min-width: 630px){
     main {
-        width: 620px;
+        max-width: 620px;
     }
 }

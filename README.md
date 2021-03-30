@@ -59,3 +59,15 @@ Start time: 01:35
 Finish time: 01:40
 
 Actual time needed to complete: 5 min
+
+## Feature #6: Styling with Flexbox
+
+Number and name of feature: Feature #6: Styling with Flexbox
+
+Estimate of time needed to complete: 15 min
+
+Start time: 02:40
+
+Finish time: 03:00
+
+Actual time needed to complete: 20 min
