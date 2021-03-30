@@ -35,3 +35,39 @@ Start time: 03:35
 Finish time: 4:00
 
 Actual time needed to complete: 25 min
+
+## Feature #4: Templating
+
+Number and name of feature: Feature #4: Templating
+
+Estimate of time needed to complete: 5 min
+
+Start time: 01:30
+
+Finish time: 1:34
+
+Actual time needed to complete: 4 min
+
+## Feature #5: Pagination
+
+Number and name of feature: Feature #5: Pagination
+
+Estimate of time needed to complete: 5 min
+
+Start time: 01:35
+
+Finish time: 01:40
+
+Actual time needed to complete: 5 min
+
+## Feature #6: Styling with Flexbox
+
+Number and name of feature: Feature #6: Styling with Flexbox
+
+Estimate of time needed to complete: 15 min
+
+Start time: 02:40
+
+Finish time: 03:00
+
+Actual time needed to complete: 20 min

@@ -13,13 +13,9 @@ const Horn = function (image_url, title, description, keyword, horns) {
 };
 
 Horn.prototype.render = function () {
-  $('main').append(`
-    <article class="photo-template">
-        <h2>${this.title}</h2>
-        <img src="${this.image_url}" alt="${this.title}" />
-        <p>${this.description}</p>
-    </article>
-  `);
+  const template = $('#template').html();
+  const renderedHtml = Mustache.render(template, this);
+  $('main').append(renderedHtml);
 }
 
 
@@ -63,10 +59,21 @@ function handleChange() {
   renderAllData($('#keyword-filter').val(), $('#sortby').val());
 }
 
+function handlePagination(event) {
+  event.preventDefault();
+  allHorns = [];
+  keywords = [];
+  $('#keyword-filter option').not(':first').remove();
+  $('main').empty();
+  getRenderData(`./data/${event.target.id}.json`);
+  handleChange();
+}
+
 function init() {
   getRenderData('./data/page-1.json');
   $('#keyword-filter').on('change', handleChange);
   $('#sortby').on('change', handleChange);
+  $('button').on('click', handlePagination);
 }
 
 init();
