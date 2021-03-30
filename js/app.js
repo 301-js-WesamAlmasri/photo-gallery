@@ -13,13 +13,9 @@ const Horn = function (image_url, title, description, keyword, horns) {
 };
 
 Horn.prototype.render = function () {
-  $('main').append(`
-    <article class="photo-template">
-        <h2>${this.title}</h2>
-        <img src="${this.image_url}" alt="${this.title}" />
-        <p>${this.description}</p>
-    </article>
-  `);
+  const template = $('#template').html();
+  const renderedHtml = Mustache.render(template, this);
+  $('main').append(renderedHtml);
 }
 
 

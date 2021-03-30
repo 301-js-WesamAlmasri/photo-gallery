@@ -35,3 +35,15 @@ Start time: 03:35
 Finish time: 4:00
 
 Actual time needed to complete: 25 min
+
+## Feature #4: Templating
+
+Number and name of feature: Feature #4: Templating
+
+Estimate of time needed to complete: 5 min
+
+Start time: 01:30
+
+Finish time: 1:34
+
+Actual time needed to complete: 4 min
