@@ -13,13 +13,14 @@ const Horn = function (image_url, title, description, keyword, horns) {
 };
 
 Horn.prototype.render = function () {
-  $('main').append(`
-    <article class="photo-template">
-        <h2>${this.title}</h2>
-        <img src="${this.image_url}" alt="${this.title}" />
-        <p>${this.description}</p>
-    </article>
-  `);
+  $('body > .photo-template').show();
+  const template = $('body > .photo-template').clone();
+  $('body > .photo-template').hide();
+  template.find('h2').text(this.title);
+  template.find('img').attr('src', this.image_url);
+  template.find('img').attr('alt', this.title);
+  template.find('p').text(this.description);
+  $('main').append(template);
 }
 
 
